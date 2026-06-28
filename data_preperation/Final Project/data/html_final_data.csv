@@ -1,0 +1,8 @@
+treatment_id,Tretment_Sector,Low_LMI_Ctry_%,Low_LMI_Ctry_SE,Upper_Mid_Income_Ctry_%,Upper_Mid_Income_Ctry_SE,High_Income_Ctry_%,High_Income_Ctry_SE,All_Countries_%,All_Countries_SE,Country_Comprison
+0,Specialty Mental Healthb,3.2,1.9,11.8,2.7,28.7,1.6,25.3,1.3,"Χ2 = 27.8*, P < 0.001"
+1,General Medicalc,14.5,4.5,16.8,3.9,36.0,1.7,32.4,1.5,"Χ2 = 15.6*, P < 0.001"
+2,Health Cared,16.8,4.6,24.6,4.3,49.3,1.8,44.4,1.6,"Χ2 = 23.6*, P < 0.001"
+3,Human Servicese,7.1,2.2,2.5,1.2,7.0,0.9,6.4,0.8,"Χ2 = 4.3*, P = 0.01"
+4,Camf,,,4.2,2.1,9.9,1.0,8.8,0.9,"Χ2 = 12.3*, P < 0.001"
+5,Non Health Careg,7.6,2.2,6.6,2.4,14.7,1.2,13.3,1.0,"Χ2 = 6.4*, P < 0.001"
+6,Any Treatmenth,22.8,5.5,28.7,4.6,53.5,1.8,48.8,1.6,"Χ2 = 19.9*, P < 0.001"
