@@ -1,0 +1,302 @@
+---
+title: "week_11_wederstrandt_d"
+author: "David Wederstrandt"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r}
+knitr::opts_chunk$set(echo=FALSE)
+```
+
+
+
+```{r include=FALSE, warning=FALSE, message=FALSE}
+library(readr)
+library(tidyverse)
+```
+
+
+```{r include=FALSE, warning=FALSE, message=FALSE}
+housing <- read_csv("Housing.csv")
+housing
+```
+
+# Housing Prices 
+
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(housing, aes(x=price)) +
+  geom_histogram(binwidth=50000, fill="skyblue", color="darkblue") + 
+  labs(title="Histogram of house prices",
+       x="Sale Price",
+       y="Count")
+theme_minimal()
+```
+
+I can see the price is right skewed, which can make it difficult to make assumptions about.
+
+
+<br>
+
+
+## Explain any transformations or modifications you made to the dataset.
+
+The price data is right-skewed  so I will transform this column I will take the log of price to create a normal(ish) distibution. 
+
+```{r include=FALSE, warning=FALSE, message=FALSE}
+housing$Log_SalePrice <- log(housing$price)
+```
+
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+ggplot(housing, aes(x=Log_SalePrice)) +
+  geom_histogram( fill="skyblue", color="darkblue") + 
+  labs(title="Histogram of house prices",
+       x="Sale Price",
+       y="Count")
+theme_minimal()
+```
+
+Using the log of price, we now have a normal distribution, but not perfectly normal
+
+
+
+<br>
+
+<!-- Create a linear regression model where “area” infers price (i.e., area is used to predict price). -->
+
+```{r include=FALSE, warning=FALSE, message=FALSE}
+lm_model <- lm(Log_SalePrice ~ area, data = housing)
+
+model_summary <- summary(lm_model)
+```
+
+
+<!-- Get a summary of your first model and explain your results (e.g., R2, adj R2, RMSE, MSE). -->
+
+
+## Linear Model Results
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+cat('\nThe R-squared of', model_summary$r.squared, 'or 29.5% of the variation in price can be explained by area.')
+
+cat('\n\nThe adjusted R-squared of', model_summary$adj.r.squared, ' or 29.3%, tells us that sill only 29% of the variation can be explained by\narea, even after accounting foe the number of predictors.')
+
+cat('\n\nThe RMSE of',  sqrt(mean(lm_model$residuals^2)), 'tells us that, on average, the predictors differ from observed data.')
+
+cat('\n\nThe MSE of', mean(lm_model$residuals^2), 'means that, on average, the squared differences between the model\'s predicted prices and\nand actual prices are close to 0.09 units squared.')
+```
+
+
+<br>
+
+
+<!-- Get the residuals of your model (you can use ‘resid’ or ‘residuals’ functions) and plot them. What does the plot tell you about your predictions? -->
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# residuals from the model
+resid_lm <- resid(lm_model)
+
+
+# create a data frame of redisuals
+resid <- data.frame(Index=seq_along(resid_lm), Residuals=resid_lm)
+
+# plot the residuals
+ggplot(resid, aes(x = Index, y = Residuals)) +
+  geom_point(color = "blue") +
+  geom_hline(yintercept = 0, color = "red", linetype = "dashed") +
+  labs(title = "Residuals Plot (ggplot2)",
+       x = "Index",
+       y = "Residuals") +
+  theme_minimal()
+```
+
+You can clearly see a pattern, which suggest that the relationship between area and log(price) may
+mot be perfectly linear. So, this model would not be appropriate for this data.
+
+
+<br>
+
+
+<!-- Use a qq plot to observe your residuals. Do your residuals meet the normality assumption? -->
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+resid_df <- data.frame(residuals = resid(lm_model))
+
+ggplot(resid_df, aes(sample = residuals)) +
+  stat_qq(color = "blue") +
+  stat_qq_line(color = "red") +
+  labs(title = "QQ Plot of Model Residuals",
+       x = "Theoretical Quantiles",
+       y = "Sample Quantiles") +
+  theme_minimal()
+```
+
+Almost all point fall directly on the red line, which tells us the residuals are approximately normal
+This supports the use of linear regression
+
+<br>
+
+
+## Multiple Predictor Linear Regression Model
+
+<!-- Create a linear regression model that uses multiple predictor variables to predict Sale Price (feel free to derive new predictors from existing ones). 
+Explain why you think each of these variables may add explanatory value to the model. -->
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+mlm_model <- lm(Log_SalePrice ~ area + bedrooms + bathrooms + 
+                  stories + parking + airconditioning,
+                data=housing)
+mlm_summary <- summary(mlm_model)
+```
+
+### Multiple Predictors and Reasoning
+
+| Category | Reasoning |
+| --- | --- |
+| *Area* | Most realators values homes at so many dollars per square foot. Bigger houses sell for more money. |
+| *Bedrooms* | More bathrooms are more appealing to families. |
+| *Bathrooms* | More bathrooms add convenience, thus value. |
+| *stories * |  More stories require less land to make a larger home. |
+| *parking* | Small parking areas require more management, while more parking is easier to manage |
+| *airconditioning* | Depending on location, air conditioning is practically an essential |
+
+
+<br>
+
+
+## Multiple Regressor Summary
+
+<!-- Get a summary of this GLM and explain your results. -->
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+mlm_summary
+```
+
+
+<br>
+
+
+### Results
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# Explanation of results:
+
+cat('\nThe coefficients show the estimated effect of each predictor on log(price), holding other variables constant.\n')
+cat('\nThe R-squared and adjusted R-squared values indicate how much of the variation in log(sale price) is explained by the model.\n')
+cat('\nSignificant p-values (Pr(>|t|)) for predictors suggest those variables have a statistically significant association with log(sale price).\n')
+cat('\nCompare these values to the single-predictor model to assess improvement.\n')
+```
+
+
+<br>
+
+
+<!-- Get the residuals of your second model (you can use ‘resid’ or ‘residuals’ functions) and plot them. What does the plot tell you about your predictions? -->
+
+### Second Model' Residuals
+
+<!-- Get a summary of this GLM and explain your results. -->
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+
+# Get the residuals from the multiple linear regression model
+resid_mlm <- resid(mlm_model)
+
+# create a data frame of these residuals
+resid_mlm_df <- data.frame(Index=seq_along(resid_mlm), MResiduals=resid_mlm)
+
+# plotting the residuals
+ggplot(resid_mlm_df, aes(x=Index, y=MResiduals)) + 
+  geom_point(color="skyblue") +
+  geom_hline(yintercept=0, color="red", linetype="dashed") + 
+  labs(title="Multiple Linear Regression Residuals",
+       x="Index",
+       y="MResiduals") +
+  theme_minimal()
+```
+
+You can clearly see a pattern, which suggest that the relationship between area and log(price) may
+not be perfectly linear. Just like the residuals for the single residual. So, this model would not be appropriate for this data.
+
+
+
+
+<br>
+
+
+
+<!-- Use a qq plot to observe your residuals. Do your residuals meet the normality assumption? -->
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+resid_mlm_df <- data.frame(residuals = resid(mlm_model))
+
+ggplot(resid_mlm_df, aes(sample = residuals)) +
+  stat_qq(color = "purple") +
+  stat_qq_line(color = "red") +
+  labs(title = "QQ Plot of Residuals (Multiple Linear Regression)",
+       x = "Theoretical Quantiles",
+       y = "Sample Quantiles") +
+  theme_minimal()
+```
+
+Almost all point fall directly on the red line as they did with just area, which tells us the residuals are approximately normal.
+This supports the use of linear regression
+
+
+<br>
+
+
+
+<!-- Compare the results (e.g., R2, adj R2, RMSE, MSE) between your first and second model.  -->
+
+```{r}
+
+# First model: simple linear regression (area only)
+r2_a <- model_summary$r.squared
+adjr2_a <- model_summary$adj.r.squared
+rmse_a <- sqrt(mean(lm_model$residuals^2))
+mse_a <- mean(lm_model$residuals^2)
+
+# Second model: multiple linear regression
+r2_m <- mlm_summary$r.squared
+adjr2_m <- mlm_summary$adj.r.squared
+rmse_m <- sqrt(mean(mlm_model$residuals^2))
+mse_m <- mean(mlm_model$residuals^2)
+
+
+cat("First Model (area only):\n",
+    "R-squared:", r2_a, "\n",
+    "Adjusted R-squared:", adjr2_a, "\n",
+    "RMSE:", rmse_a, "\n",
+    "MSE:", mse_a, "\n\n")
+
+cat("Second Model (multiple predictors):\n",
+    "R-squared:", r2_m, "\n",
+    "Adjusted R-squared:", adjr2_m, "\n",
+    "RMSE:", rmse_m, "\n",
+    "MSE:", mse_m, "\n")
+
+
+cat("\n\n\nMultiple regression model(MRM) R-squared:",  r2_m, "is greater than Area regression model (ARM) R-squared:", r2_a, "and")
+cat("\nMRM Adjusted R-squared:",  adjr2_m, "is greater than ARMl R-squared:", adjr2_a, ".\n")
+cat("\n\tMeaning: MRM explains more of the variation in log(price) than the ARM.")
+
+cat("\n\n\nMultiple regression model(MRM) Root Mean Squared Error (RMSE) :",  rmse_m, "is less than Area regression model (ARM) RMSE:", rmse_a, "and")
+cat("\nMRM Mean Squared Error (MSE):",  mse_m, "is less than ARMl Mean Squared Error (MSE):", mse_a, ".\n")
+cat("\n\tMeaning: MRM RMSE and MSE are less indicating MRM predictions are, on average, closer to the actual values.")
+```
+
+
+<!-- Does your new model show an improvement over the first? To confirm a ‘significant’ improvement between the second and first model, use ANOVA to compare them. What are the results? -->
+
+```{r}
+anova_result <- anova(lm_model, mlm_model)
+anova_result
+```
+
+```{r}
+cat("With a p-value of", anova_result$`Pr(>F)`,"we know the Multiple regression model is a significantly better model\ncompared to the area regression model")
+```
+
