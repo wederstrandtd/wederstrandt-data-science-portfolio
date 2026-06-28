@@ -31,18 +31,8 @@ Each directory includes a local `README.md` that covers the technical scope, fil
 4. Use document/presentation artifacts for final communication deliverables.
 
 ## Documentation Coverage
-README files are available in:
-- `data_mining/`
-- `data_preperation/`
-- `data_preparation/Final Project/.`
-- `data_presentation/`
-- `data_visualization/`
-- `eda/`
-- `generative_ai/`
-- `Intro_to_data_science/`
-- `predictive_analytics/`
-- `Statistics/`
+README files are available in subfolders.
 
 ## Notes
-- Directory name `data_preparation` is preserved as-is to match existing repository paths.
+
 - Many folders contain final academic artifacts in addition to executable notebooks/scripts.
