@@ -1,4 +1,4 @@
-# data_visualization
+# Data_Visualization
 
 ![Track](https://img.shields.io/badge/Track-Data%20Visualization-0F4C5C)
 ![Format](https://img.shields.io/badge/Formats-Rmd%20%7C%20PDF%20%7C%20PNG-2C7DA0)
