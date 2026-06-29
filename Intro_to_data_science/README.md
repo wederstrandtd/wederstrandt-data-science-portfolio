@@ -1,7 +1,17 @@
 # Intro_to_data_science
 
+![Level](https://img.shields.io/badge/Course-Foundations-5C4D7D)
+![Artifacts](https://img.shields.io/badge/Artifacts-Paper%20%7C%20Slides-7A9E9F)
+
 ## Scope
 This directory stores introductory data science project deliverables focused on an energy drink analysis.
+
+## At A Glance
+| Category | Details |
+|---|---|
+| Primary theme | Introductory analytical framing |
+| Main outputs | Report + presentation |
+| Technical depth | Foundational |
 
 ## Project Goal
 Establish a foundational analytics narrative by defining a business-relevant question, collecting supporting evidence, and translating findings into written and presentation formats.
@@ -35,3 +45,6 @@ These assets are primarily final deliverables; supporting code and raw data may 
 ## Limitations
 - Source notebooks and intermediate data processing steps are not stored in this folder.
 - Reproducibility is documentation-first rather than code-first for this early-stage project.
+
+## Reviewer Tip
+Use this folder to evaluate communication clarity and the quality of problem framing, rather than implementation complexity.
