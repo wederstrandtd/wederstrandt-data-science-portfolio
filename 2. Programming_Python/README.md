@@ -1,5 +1,9 @@
 # Programming Python
 
+![Track](https://img.shields.io/badge/Track-Programming%20Python-1F6FEB)
+![App](https://img.shields.io/badge/App-CLI%20Weather-2A9D8F)
+![API](https://img.shields.io/badge/API-OpenWeather-F4A261)
+
 ## Overview
 This folder contains Python coursework artifacts and a command-line weather project that uses the OpenWeather API.
 
