@@ -1,7 +1,18 @@
-# Exploritory Data Analysis
+# Exploratory Data Analysis
+
+[Track](https://img.shields.io/badge/Track-Exploratory%20Data%20Analysis-2A9D8F)
+![Notebook](https://img.shields.io/badge/Primary%20Artifact-Jupyter%20Notebook-F37726?logo=jupyter&logoColor=white)
 
 ## Scope
 This directory contains exploratory data analysis (EDA) work for cardiovascular disease outcomes.
+
+## At A Glance
+| Category | Details |
+|---|---|
+| Domain | Cardiovascular disease outcomes |
+| Primary asset | `dsc530_wederstrandt_final_project.ipynb` |
+| Supporting context | `cardiovascular_disease.md` |
+| Goal | Discover patterns and guide feature selection |
 
 ## Objective
 Identify meaningful patterns in patient-level or outcome-related variables to support downstream hypothesis testing and predictive modeling decisions.
@@ -36,3 +47,8 @@ Identify meaningful patterns in patient-level or outcome-related variables to su
 - Run notebook cells sequentially to maintain variable state.
 - Install visualization and analysis dependencies before execution.
 - Use markdown notes as a bridge between exploratory findings and model planning.
+
+## Outcome Quality Signals
+- Clear summary statistics with missingness awareness.
+- Visual evidence for distributions and relationships.
+- Explicit hypotheses ready for downstream modeling.
