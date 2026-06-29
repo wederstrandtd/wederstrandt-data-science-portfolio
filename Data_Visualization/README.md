@@ -1,7 +1,19 @@
-# Data_Visualization
+# data_visualization
+
+![Track](https://img.shields.io/badge/Track-Data%20Visualization-0F4C5C)
+![Format](https://img.shields.io/badge/Formats-Rmd%20%7C%20PDF%20%7C%20PNG-2C7DA0)
+![Focus](https://img.shields.io/badge/Focus-Storytelling-468FAF)
 
 ## Scope
 This directory includes visualization artifacts for coursework and milestone presentations, with outputs spanning R Markdown, PDF, and image formats.
+
+## At A Glance
+| Category | Details |
+|---|---|
+| Authoring source | `dsc640_wederstrandt_milestone4_blog_mockup.Rmd` |
+| Rendered artifacts | PDF reports and presentation deliverables |
+| Visual asset | `infographic.png` |
+| Primary goal | Communicate insight with clarity and narrative flow |
 
 ## Objective
 Communicate analytical findings through clear visual narratives that balance statistical accuracy with audience accessibility.
@@ -38,3 +50,6 @@ Communicate analytical findings through clear visual narratives that balance sta
 - Source artifact (`.Rmd`) for version-controlled analytical writing.
 - Rendered reports/papers (`.pdf`) for submission and review.
 - Standalone visual asset (`.png`) for slide or document reuse.
+
+## Portfolio Highlight
+This folder demonstrates the translation of analytical content into publication-ready visual deliverables, with an emphasis on readability and narrative coherence.
