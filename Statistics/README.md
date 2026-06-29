@@ -1,7 +1,18 @@
 # Statistics
 
+![Track](https://img.shields.io/badge/Track-Statistical%20Modeling-1F6E8C)
+![Stack](https://img.shields.io/badge/Stack-R%20%7C%20RMarkdown-276DC3?logo=r&logoColor=white)
+
 ## Scope
 This folder contains statistical modeling coursework artifacts, including regression analysis and supporting data.
+
+## At A Glance
+| Category | Details |
+|---|---|
+| Focus | Regression and GLM comparison |
+| Source file | `week_11_wederstrandt_d.Rmd` |
+| Rendered output | `week_11_wederstrandt_d.pdf` |
+| Data asset | `Housing.csv` |
 
 ## Problem Context
 This work compares modeling strategies for continuous or generalized outcomes, with an emphasis on selecting model forms that align with the data-generating assumptions.
@@ -36,6 +47,11 @@ This work compares modeling strategies for continuous or generalized outcomes, w
 ## Expected Outputs
 - A rendered analysis report (`.pdf`) documenting model setup, diagnostics, and interpretation.
 - Structured narrative comparing regression and GLM suitability.
+
+## Visual Review Flow
+1. Read the problem context and methodological themes.
+2. Inspect the `.Rmd` for analytical logic and assumptions.
+3. Validate interpretation quality in the rendered `.pdf`.
 
 ## Notes
 - File set includes both source and rendered outputs for easier review.
