@@ -1,6 +1,19 @@
 # wederstrandt-data-science-portfolio
 
+![Portfolio](https://img.shields.io/badge/Portfolio-Data%20Science-0A7E8C)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![R](https://img.shields.io/badge/R-Reporting-276DC3?logo=r&logoColor=white)
+![Focus](https://img.shields.io/badge/Focus-EDA%20%7C%20Modeling%20%7C%20Storytelling-4C956C)
+
 Technical portfolio of data science coursework and project deliverables across data preparation, exploratory analysis, statistical modeling, predictive analytics, data mining, visualization, and generative AI communication artifacts.
+
+## Quick Portfolio Snapshot
+| Dimension | Coverage |
+|---|---|
+| Primary domains | Data preparation, EDA, statistics, predictive analytics, data mining, visualization, GenAI communication |
+| Core tooling | Python, Jupyter, R, R Markdown, Markdown |
+| Artifact formats | `.ipynb`, `.Rmd`, `.pdf`, `.docx`, `.pptx`, `.png`, `.csv` |
+| Portfolio style | End-to-end workflow plus stakeholder-ready communication |
 
 ## Portfolio Objectives
 - Demonstrate end-to-end analytical workflows from raw data acquisition to communication-ready outputs.
@@ -23,6 +36,19 @@ Technical portfolio of data science coursework and project deliverables across d
 - `generative_ai/`: Generative AI milestone documentation and presentation assets.
 
 Each directory includes a local `README.md` that covers the technical scope, file inventory, and tooling notes.
+
+## Folder Map
+| Folder | Theme | Typical Output |
+|---|---|---|
+| `data_preperation/` | Multi-source ETL and normalization | Cleaned, integrated data workflows |
+| `eda/` | Exploratory profiling and hypothesis formation | Pattern discovery notebooks |
+| `Statistics/` | Regression and GLM analysis | R Markdown reports and interpretations |
+| `predictive_analytics/` | Predictive modeling exercises | Model evaluation notebooks |
+| `data_mining/` | Imbalanced fraud detection classification | Comparative classification metrics |
+| `data_visualization/` | Visual storytelling and report artifacts | R Markdown output, PDF, infographic |
+| `data_presentation/` | Stakeholder-facing synthesis | Narrative markdown + supporting notebook |
+| `generative_ai/` | Milestone communication artifacts | Report and presentation deliverables |
+| `Intro_to_data_science/` | Introductory analysis communication | Paper and presentation assets |
 
 ## Technology Stack
 - Python (Jupyter notebooks for EDA, predictive analytics, and data mining)
@@ -56,6 +82,18 @@ Most technical projects in this repository follow a common lifecycle:
 3. Render `.Rmd` files in an R-enabled environment to reproduce PDF/report outputs.
 4. Use document/presentation artifacts for final communication deliverables.
 
+## Documentation Coverage
+README files are available in:
+- `data_mining/`
+- `data_preperation/`
+- `data_preparation/Final Project/.`
+- `data_presentation/`
+- `data_visualization/`
+- `eda/`
+- `generative_ai/`
+- `Intro_to_data_science/`
+- `predictive_analytics/`
+- `Statistics/`
 
 ## Notes
 - Directory name `data_preparation` is preserved as-is to match existing repository paths.
@@ -67,3 +105,8 @@ Most technical projects in this repository follow a common lifecycle:
 3. `predictive_analytics/` and `data_mining/` for modeling workflows.
 4. `data_visualization/` and `data_presentation/` for communication design.
 5. `generative_ai/` and `Intro_to_data_science/` for supporting milestone context.
+
+## What Makes This Portfolio Stand Out
+- Breadth across the full analytics lifecycle, not only model building.
+- Strong emphasis on reproducibility and method transparency.
+- Consistent conversion of technical analysis into communication artifacts.
