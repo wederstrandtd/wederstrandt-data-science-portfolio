@@ -1,7 +1,18 @@
-# Predictive_Analytics
+# predictive_analytics
+
+![Track](https://img.shields.io/badge/Track-Predictive%20Modeling-355070)
+![Stack](https://img.shields.io/badge/Stack-Python%20%7C%20scikit--learn-3776AB?logo=python&logoColor=white)
 
 ## Scope
 This directory contains predictive analytics coursework focused on model development and evaluation workflows.
+
+## At A Glance
+| Category | Details |
+|---|---|
+| Primary notebook | `wederstrandt_wk10_ex.ipynb` |
+| Supporting notes | `rm.md` |
+| Core activity | Train, compare, and interpret models |
+| Emphasis | Performance and methodological rigor |
 
 ## Objective
 Implement and evaluate predictive modeling pipelines that balance performance, interpretability, and methodological rigor.
@@ -36,3 +47,8 @@ Implement and evaluate predictive modeling pipelines that balance performance, i
 - Execute notebook cells in order.
 - Keep dependency versions stable when comparing results across runs.
 - Use supplemental notes to capture assumptions and experiment context.
+
+## Reviewer Checklist
+- Baseline vs candidate models are clearly separated.
+- Metrics align with the problem type.
+- Trade-offs are discussed, not only scores reported.
