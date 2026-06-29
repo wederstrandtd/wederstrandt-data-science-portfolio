@@ -9,7 +9,7 @@ This directory contains data preparation and integration work for the DSC540 fin
 ## At A Glance
 | Category | Details |
 |---|---|
-| Primary folder | `Final Project/` |
+| Primary artifacts | 4 Jupyter notebooks |
 | Workflow style | Multi-source ETL |
 | Core output | Analysis-ready integrated dataset |
 | Main skills | Extraction, cleaning, schema alignment |
@@ -18,7 +18,10 @@ This directory contains data preparation and integration work for the DSC540 fin
 Build a unified, analysis-ready dataset from heterogeneous inputs while documenting extraction, cleaning, and transformation logic.
 
 ## Contents
-- `Final Project/`: Consolidated project notebooks by source modality.
+- `dsc540_api_wederstrandt_d_final_project.ipynb`: API extraction and transformation workflow.
+- `dsc540_flatfile_wederstrandt_d_final_project.ipynb`: Flat-file ingestion and cleaning workflow.
+- `dsc540_html_wederstrandt_d_final_project.ipynb`: HTML/web extraction and parsing workflow.
+- `dsc540_final_project_wederstrandt_d.ipynb`: Consolidated integration workflow.
 
 ## Technical Focus
 - Data acquisition from APIs, flat files, and HTML sources.
@@ -37,6 +40,11 @@ Build a unified, analysis-ready dataset from heterogeneous inputs while document
 4. Consolidation into integrated analytical tables.
 5. Validation checks for completeness and consistency.
 
+## Outcome Highlights
+- Implements 4 distinct notebook stages from source-specific ingestion to integrated final pipeline.
+- Demonstrates 3 ingestion modalities (API, flat file, and HTML) in one reproducible workflow set.
+- Produces a consolidated, analysis-ready dataset workflow for downstream modeling.
+
 ## Data Quality Practices
 - Standardize column names and data types before joins.
 - Track missing values and imputation/handling decisions.
@@ -44,9 +52,9 @@ Build a unified, analysis-ready dataset from heterogeneous inputs while document
 - Capture transformation assumptions in notebook markdown.
 
 ## How To Navigate
-1. Start in `Final Project/` and review notebooks by source type.
+1. Start with source-specific notebooks (`api`, `flatfile`, `html`) to review extraction logic.
 2. Validate extraction logic at the source level.
-3. Finish with the integrated final notebook for the combined workflow.
+3. Finish with `dsc540_final_project_wederstrandt_d.ipynb` for the combined workflow.
 
 ## Notes
 - Folder name `data_preparation` is intentionally retained to match repository structure.
