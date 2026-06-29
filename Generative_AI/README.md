@@ -1,10 +1,22 @@
-# Generative_AI
+# generative_AI
+
+![Track](https://img.shields.io/badge/Track-Generative%20AI-5A189A)
+![Artifacts](https://img.shields.io/badge/Artifacts-Report%20%7C%20PDF%20%7C%20Slides-7B2CBF)
+![Purpose](https://img.shields.io/badge/Purpose-Milestone%20Communication-9D4EDD)
 
 ## Scope
 This folder contains milestone deliverables related to generative AI coursework.
 
+## At A Glance
+| Category | Details |
+|---|---|
+| Written source | `dsc670_wederstrandt_milestone_4.docx` |
+| Shareable version | `dsc670_wederstrandt_milestone_4.pdf` |
+| Presentation deck | `dsc670_wederstrandt_milestone_4.pptx` |
+| Focus | Concept documentation and milestone communication |
+
 ## Objective
-Document and communicate generative AI concepts, methodology, and outcomes through formal reports and presentation artifacts.
+Document and communicate generative AI concepts, methodology, and outcomes through formal report and presentation artifacts.
 
 ## Contents
 - `dsc670_wederstrandt_milestone_4.docx`: Written milestone report.
@@ -31,3 +43,6 @@ Source code may be embedded in external documents rather than maintained as stan
 ## Reproducibility Notes
 - If executable code is referenced, it may be embedded in document sections rather than stored as separate scripts.
 - This folder is documentation-centric and intended for milestone communication.
+
+## Portfolio Highlight
+This folder demonstrates the ability to package technical AI concepts into both long-form and presentation-ready artifacts for diverse review contexts.
