@@ -82,18 +82,6 @@ Most technical projects in this repository follow a common lifecycle:
 3. Render `.Rmd` files in an R-enabled environment to reproduce PDF/report outputs.
 4. Use document/presentation artifacts for final communication deliverables.
 
-## Documentation Coverage
-README files are available in:
-- `data_mining/`
-- `data_preparation/`
-- `data_preparation/Final Project/.`
-- `data_presentation/`
-- `data_visualization/`
-- `eda/`
-- `generative_ai/`
-- `Intro_to_data_science/`
-- `predictive_analytics/`
-- `Statistics/`
 
 ## Notes
 
