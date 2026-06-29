@@ -6,7 +6,8 @@ This folder contains Python coursework artifacts and a command-line weather proj
 ## Files
 - `openweather_forecast.py`: Main CLI program to fetch and display weather forecast details.
 - `us_state_lookup.py`: Helper module that converts full US state names to 2-letter abbreviations.
-- `.env` (optional): Stores API credentials using `API_KEY='your_key_here'`.
+- `.env` (optional, local-only): Stores API credentials using `API_KEY='your_key_here'`.
+- `.env.example`: Safe template for environment setup.
 
 ## OpenWeather Forecast Program
 The forecast script:
@@ -15,6 +16,11 @@ The forecast script:
 - Prompts for how many days to display (1-5).
 - Calls OpenWeather Geocoding + 5-day Forecast APIs.
 - Summarizes daily conditions, min/max temperature, and average humidity.
+
+## Outcome Highlights
+- Supports 51 normalized US location inputs (50 states + District of Columbia).
+- Produces up to 5 daily forecast summaries per run from 3-hour interval API data.
+- Includes resilient key handling with two fallback paths: one-run paste or saved `.env` update.
 
 ## API Key Options
 The program supports two API key paths:
@@ -39,3 +45,7 @@ python3 openweather_forecast.py
 ## Input Examples
 - `Denver, CO`
 - `Denver, Colorado`
+
+## Security Note
+- Keep `.env` local and untracked.
+- If an API key is ever exposed in version control, rotate it immediately and replace local credentials.
