@@ -1,7 +1,18 @@
 # Data_Preparation
 
+![Track](https://img.shields.io/badge/Track-Data%20Preparation-3D5A80)
+![Pipeline](https://img.shields.io/badge/Pipeline-API%20%7C%20Flat%20File%20%7C%20HTML-98C1D9)
+
 ## Scope
 This directory contains data preparation and integration work for the DSC540 final project. The focus is on ingesting and normalizing data from multiple source types.
+
+## At A Glance
+| Category | Details |
+|---|---|
+| Primary folder | `Final Project/` |
+| Workflow style | Multi-source ETL |
+| Core output | Analysis-ready integrated dataset |
+| Main skills | Extraction, cleaning, schema alignment |
 
 ## Objective
 Build a unified, analysis-ready dataset from heterogeneous inputs while documenting extraction, cleaning, and transformation logic.
@@ -39,3 +50,8 @@ Build a unified, analysis-ready dataset from heterogeneous inputs while document
 
 ## Notes
 - Folder name `data_preparation` is intentionally retained to match repository structure.
+
+## Visual Navigation
+1. Start with source-specific extraction notebooks.
+2. Validate quality checks and schema consistency.
+3. Finish with an integrated consolidation workflow.
