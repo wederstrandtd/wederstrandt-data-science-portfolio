@@ -1,7 +1,19 @@
 # Data_Mining
 
+![Track](https://img.shields.io/badge/Track-Data%20Mining-264653)
+![Use%20Case](https://img.shields.io/badge/Use%20Case-Fraud%20Detection-B56576)
+![Modeling](https://img.shields.io/badge/Task-Imbalanced%20Classification-6D597A)
+
 ## Scope
 This directory contains coursework and project artifacts focused on supervised learning for fraud detection.
+
+## At A Glance
+| Category | Details |
+|---|---|
+| Main notebook | `dsc550_wederstrandt_d_term_project_fraud_detection.ipynb` |
+| Supporting notes | `dm.md` |
+| Core challenge | Class imbalance |
+| Evaluation style | Precision/Recall/F1/ROC-AUC aware |
 
 ## Problem Framing
 Fraud detection is typically an imbalanced classification problem where minority-class recall and precision often matter more than raw accuracy.
@@ -40,3 +52,6 @@ Fraud detection is typically an imbalanced classification problem where minority
 ## Operational Considerations
 - Optimize for the business cost of misclassification, not only aggregate accuracy.
 - Revisit thresholds and sampling strategy as class distribution changes.
+
+## Portfolio Highlight
+This folder emphasizes realistic model evaluation for high-cost decision contexts where false positives and false negatives carry different business impacts.
