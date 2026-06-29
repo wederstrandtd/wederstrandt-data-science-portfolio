@@ -40,7 +40,7 @@ Each directory includes a local `README.md` that covers the technical scope, fil
 ## Folder Map
 | Folder | Theme | Typical Output |
 |---|---|---|
-| `data_preperation/` | Multi-source ETL and normalization | Cleaned, integrated data workflows |
+| `data_preparation/` | Multi-source ETL and normalization | Cleaned, integrated data workflows |
 | `eda/` | Exploratory profiling and hypothesis formation | Pattern discovery notebooks |
 | `Statistics/` | Regression and GLM analysis | R Markdown reports and interpretations |
 | `predictive_analytics/` | Predictive modeling exercises | Model evaluation notebooks |
@@ -85,7 +85,7 @@ Most technical projects in this repository follow a common lifecycle:
 ## Documentation Coverage
 README files are available in:
 - `data_mining/`
-- `data_preperation/`
+- `data_preparation/`
 - `data_preparation/Final Project/.`
 - `data_presentation/`
 - `data_visualization/`
@@ -96,17 +96,5 @@ README files are available in:
 - `Statistics/`
 
 ## Notes
-- Directory name `data_preparation` is preserved as-is to match existing repository paths.
+
 - Many folders contain final academic artifacts in addition to executable notebooks/scripts.
-
-## Suggested Review Order
-1. `data_preparation/` for ingestion and transformation patterns.
-2. `eda/` and `Statistics/` for exploratory and inferential depth.
-3. `predictive_analytics/` and `data_mining/` for modeling workflows.
-4. `data_visualization/` and `data_presentation/` for communication design.
-5. `generative_ai/` and `Intro_to_data_science/` for supporting milestone context.
-
-## What Makes This Portfolio Stand Out
-- Breadth across the full analytics lifecycle, not only model building.
-- Strong emphasis on reproducibility and method transparency.
-- Consistent conversion of technical analysis into communication artifacts.
