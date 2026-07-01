@@ -1,61 +1,43 @@
-# Data_Mining
+# Data Preparation
 
-![Track](https://img.shields.io/badge/Track-Data%20Mining-264653)
-![Use%20Case](https://img.shields.io/badge/Use%20Case-Fraud%20Detection-B56576)
-![Modeling](https://img.shields.io/badge/Task-Imbalanced%20Classification-6D597A)
+![Track](https://img.shields.io/badge/Track-Data%20Preparation-2A9D8F)
+![Sources](https://img.shields.io/badge/Sources-API%20%7C%20HTML%20%7C%20Flat%20File-457B9D)
+![Output](https://img.shields.io/badge/Output-Analysis--Ready%20Data-1D3557)
 
 ## Scope
-This directory contains coursework and project artifacts focused on supervised learning for fraud detection.
+This directory contains data ingestion, wrangling, and integration work across multiple source types.
 
 ## At A Glance
 | Category | Details |
 |---|---|
-| Main notebook | `dsc550_wederstrandt_d_term_project_fraud_detection.ipynb` |
-| Supporting notes | Included in notebook markdown cells |
-| Core challenge | Class imbalance |
-| Evaluation style | Precision/Recall/F1/ROC-AUC aware |
+| API workflow | `dsc540_api_wederstrandt_d_final_project.ipynb` |
+| HTML workflow | `dsc540_html_wederstrandt_d_final_project.ipynb` |
+| Flat-file workflow | `dsc540_flatfile_wederstrandt_d_final_project.ipynb` |
+| Integrated workflow | `dsc540_final_project_wederstrandt_d.ipynb` |
 
-## Problem Framing
-Fraud detection is typically an imbalanced classification problem where minority-class recall and precision often matter more than raw accuracy.
+## Objective
+Build repeatable data preparation pipelines that convert raw inputs into consistent, analysis-ready tables.
 
 ## Contents
-- `dsc550_wederstrandt_d_term_project_fraud_detection.ipynb`: End-to-end notebook for data loading, preprocessing, model training, and fraud-classification evaluation.
-
-## Outcome Highlights
-- Delivers one end-to-end fraud detection workflow from ingestion through evaluation.
-- Applies imbalanced-class evaluation strategy using precision/recall/F1/ROC-aware comparisons.
-- Documents modeling assumptions and trade-offs within a single reproducible artifact.
+- `dsc540_api_wederstrandt_d_final_project.ipynb`: Data extraction and transformation from API sources.
+- `dsc540_html_wederstrandt_d_final_project.ipynb`: Web/HTML table extraction and cleaning workflow.
+- `dsc540_flatfile_wederstrandt_d_final_project.ipynb`: Flat-file ingestion and normalization workflow.
+- `dsc540_final_project_wederstrandt_d.ipynb`: End-to-end integrated data preparation project.
 
 ## Technical Focus
-- Binary classification for imbalanced classes.
-- Feature engineering and data-quality handling for transactional data.
-- Model comparison using metrics appropriate for skewed labels (for example, precision, recall, F1, and ROC-AUC).
+- Schema alignment across multiple source formats.
+- Data quality checks, cleaning, and type normalization.
+- Repeatable notebook pipelines for preparation and integration.
 
 ## Tooling
 - Python 3.x
 - Jupyter Notebook
-- Typical stack: `pandas`, `numpy`, `scikit-learn`, `matplotlib`/`seaborn`
+- Typical stack: `pandas`, `numpy`, `requests`, and parsing libraries
 
 ## Reproducibility Notes
-1. Open the notebook in Jupyter or VS Code.
-2. Install required Python packages in your environment.
-3. Execute cells to reproduce preprocessing and model outputs.
-
-## Typical Pipeline Stages
-1. Data inspection and target distribution analysis.
-2. Feature cleanup, encoding, and transformation.
-3. Train/validation splitting with attention to class balance.
-4. Candidate model training and threshold-aware evaluation.
-5. Error analysis on false positives and false negatives.
-
-## Expected Deliverables
-- A reproducible notebook showing data preparation through model evaluation.
-- Comparative metric summaries aligned to fraud-risk priorities.
-- Supporting notes describing assumptions and limitations.
-
-## Operational Considerations
-- Optimize for the business cost of misclassification, not only aggregate accuracy.
-- Revisit thresholds and sampling strategy as class distribution changes.
+1. Open notebooks in Jupyter or VS Code.
+2. Install required dependencies before running.
+3. Execute notebooks top-to-bottom to preserve transformation order.
 
 ## Portfolio Highlight
-This folder emphasizes realistic model evaluation for high-cost decision contexts where false positives and false negatives carry different business impacts.
+This folder demonstrates practical ETL-style preparation work needed before analysis or modeling can begin.
