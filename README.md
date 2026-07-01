@@ -1,4 +1,4 @@
-# wederstrandt-data-science-portfolio
+# Data Science Portfolio
 
 ![Portfolio](https://img.shields.io/badge/Portfolio-Data%20Science-0A7E8C)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
