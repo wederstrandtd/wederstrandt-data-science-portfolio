@@ -1,4 +1,4 @@
-# Exploratory Data Analysis
+# Heart Disease Analysis
 
 [Track](https://img.shields.io/badge/Track-Exploratory%20Data%20Analysis-2A9D8F)
 ![Notebook](https://img.shields.io/badge/Primary%20Artifact-Jupyter%20Notebook-F37726?logo=jupyter&logoColor=white)
@@ -10,7 +10,7 @@ This directory contains exploratory data analysis (EDA) work for cardiovascular 
 | Category | Details |
 |---|---|
 | Domain | Cardiovascular disease outcomes |
-| Primary asset | `dsc530_wederstrandt_final_project.ipynb` |
+| Primary asset | `heart_disease_analysis.ipynb` |
 | Supporting context | `cardiovascular_disease.md` |
 | Goal | Discover patterns and guide feature selection |
 
@@ -18,7 +18,7 @@ This directory contains exploratory data analysis (EDA) work for cardiovascular 
 Identify meaningful patterns in patient-level or outcome-related variables to support downstream hypothesis testing and predictive modeling decisions.
 
 ## Contents
-- `dsc530_wederstrandt_final_project.ipynb`: Notebook with exploratory profiling, descriptive statistics, and preliminary inference.
+- `heart_disease_analysis.ipynb`: Notebook with exploratory profiling, descriptive statistics, and preliminary inference.
 - `cardiovascular_disease.md`: Project notes and context.
 
 ## Technical Focus

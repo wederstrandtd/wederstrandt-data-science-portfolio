@@ -1,4 +1,4 @@
-# Statistics
+# Housing Market Anlysis
 
 ![Track](https://img.shields.io/badge/Track-Statistical%20Modeling-1F6E8C)
 ![Stack](https://img.shields.io/badge/Stack-R%20%7C%20RMarkdown-276DC3?logo=r&logoColor=white)
@@ -10,8 +10,8 @@ This folder contains statistical modeling coursework artifacts, including regres
 | Category | Details |
 |---|---|
 | Focus | Regression and GLM comparison |
-| Source file | `week_11_wederstrandt_d.Rmd` |
-| Rendered output | `week_11_wederstrandt_d.pdf` |
+| Source file | `housing_market_analysis.Rmd` |
+| Rendered output | `housing_market_analysis.pdf` |
 | Data asset | `Housing.csv` |
 
 ## Problem Context
@@ -20,8 +20,8 @@ This work compares modeling strategies for continuous or generalized outcomes, w
 ## Contents
 - `Comparing Regression and Generalized Linear Models.docx`: Written comparison of regression frameworks.
 - `Housing.csv`: Dataset used in statistical exercises.
-- `week_11_wederstrandt_d.Rmd`: R Markdown source for week 11 analysis.
-- `week_11_wederstrandt_d.pdf`: Rendered analysis output.
+- `housing_market_analysis.Rmd`: R Markdown source for week 11 analysis.
+- `housing_market_analysis.pdf`: Rendered analysis output.
 
 ## Technical Focus
 - Classical regression and generalized linear model (GLM) comparison.

@@ -1,6 +1,4 @@
-
-# DSC530 Data Exploration and Analysis  
-## Final Project: Heart Disease Prediction Through Data Science  
+ # Final Project: Heart Disease Prediction Through Data Science  
 **David Wederstrandt**
 
 ---
