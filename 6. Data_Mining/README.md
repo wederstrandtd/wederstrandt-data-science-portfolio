@@ -11,7 +11,7 @@ This directory contains coursework and project artifacts focused on supervised l
 | Category | Details |
 |---|---|
 | Main notebook | `dsc550_wederstrandt_d_term_project_fraud_detection.ipynb` |
-| Supporting notes | `dm.md` |
+| Supporting notes | Included in notebook markdown cells |
 | Core challenge | Class imbalance |
 | Evaluation style | Precision/Recall/F1/ROC-AUC aware |
 
