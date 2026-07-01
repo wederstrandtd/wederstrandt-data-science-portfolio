@@ -5,13 +5,12 @@
 ![API](https://img.shields.io/badge/API-OpenWeather-F4A261)
 
 ## Overview
-This folder contains Python coursework artifacts and a command-line weather project that uses the OpenWeather API.
+This folder contains Python scripting projects, including a command-line weather app that uses the OpenWeather API.
 
 ## Files
 - `openweather_forecast.py`: Main CLI program to fetch and display weather forecast details.
 - `us_state_lookup.py`: Helper module that converts full US state names to 2-letter abbreviations.
 - `.env` (optional, local-only): Stores API credentials using `API_KEY='your_key_here'`.
-- `.env.example`: Safe template for environment setup.
 
 ## OpenWeather Forecast Program
 The forecast script:
