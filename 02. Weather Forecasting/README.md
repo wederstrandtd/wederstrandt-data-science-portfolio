@@ -1,4 +1,4 @@
-# Programming Python
+# Weather Forecasting
 
 ![Track](https://img.shields.io/badge/Track-Programming%20Python-1F6FEB)
 ![App](https://img.shields.io/badge/App-CLI%20Weather-2A9D8F)
@@ -36,7 +36,7 @@ The program supports two API key paths:
 From the repository root:
 
 ```bash
-python3 "2. Programming_Python/openweather_forecast.py"
+python3 "2. Weather Forecasting/openweather_forecast.py"
 ```
 
 Or from this folder:

@@ -1,7 +1,6 @@
 """
 Author: David Wederstrandt
 Project: OpenWeather Forecast CLI
-Course Folder: 2. Programming_Python
 
 Purpose:
 - Prompt for location and forecast days.
