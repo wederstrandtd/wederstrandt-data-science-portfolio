@@ -1,4 +1,4 @@
-# Data_Mining
+# Credit Card Fraud Detection Analysis
 
 ![Track](https://img.shields.io/badge/Track-Data%20Mining-264653)
 ![Use%20Case](https://img.shields.io/badge/Use%20Case-Fraud%20Detection-B56576)
@@ -10,7 +10,7 @@ This directory contains coursework and project artifacts focused on supervised l
 ## At A Glance
 | Category | Details |
 |---|---|
-| Main notebook | `dsc550_wederstrandt_d_term_project_fraud_detection.ipynb` |
+| Main notebook | `credit_card_fraud_detection_analysis.ipynb` |
 | Supporting notes | Included in notebook markdown cells |
 | Core challenge | Class imbalance |
 | Evaluation style | Precision/Recall/F1/ROC-AUC aware |

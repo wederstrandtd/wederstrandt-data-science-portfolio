@@ -1,4 +1,4 @@
-# Predictive_Analytics
+# Diabetes Predictive Analytics
 
 ![Track](https://img.shields.io/badge/Track-Predictive%20Modeling-355070)
 ![Stack](https://img.shields.io/badge/Stack-Python%20%7C%20scikit--learn-3776AB?logo=python&logoColor=white)
